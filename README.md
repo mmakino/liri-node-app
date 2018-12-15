@@ -78,28 +78,28 @@ OMDB_KEY=<your API key>
     `node liri.js concert-this <artist/band name>`
 
     * Without `<artist/band name>`, there will be no result.
-      ![Image of concert 1](https://www.github.com/mmakino/images/screenshot-concert-default.png)
+      ![concert-this default image](images/screenshot-concert-default.png)
 
     * With `<artist/band name>`. Search for "Bruno Mars" and "Foo Fighters" for example.
-      ![Image of concert 2](https://www.github.com/mmakino/images/screenshot-concert-artists.png)
+      ![concert-this image](images/screenshot-concert-artists.png)
 
 2. Search a song on Spotify
     `node liri.js spotify-this-song <song name>`
 
     * Default without a `<song name>` argument, the result will be "The Sign" by "Ace of Base".
-      ![Image of song 1](https://www.github.com/mmakino/images/screenshot-song-default.png)
+      ![spotify-this-song default image](images/screenshot-song-default.png)
 
     * With `<song name>`. Search for "We will rock you" for example.
-      ![Image of song 2](https://www.github.com/mmakino/images/screenshot-song-queen.png)
+      ![spotify-this-song image](images/screenshot-song-queen.png)
 
 3. Search a movie info on OMDb
     `node liri.js movie-this <movie name>`
 
     * Default without a `<movie name>` argument, the result will be for the movie "Mr. Nobody".
-      ![Image of movie 1](https://www.github.com/mmakino/images/screenshot-movie-default.png)
+      ![movie-this default image](screenshot-movie-default.png)
 
     * With `<movie name>`. Search for "Pulp Fiction" for example.
-      ![Image of movie 2](https://www.github.com/mmakino/images/screenshot-movie-pulpfiction.png)
+      ![movie-this image](images/screenshot-movie-pulpfiction.png)
 
 4. Run multiple searches based on a text file, random.txt
     `node liri.js do-what-it-says`
