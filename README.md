@@ -7,10 +7,10 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 ### Description
 
 LIRI understands and reponds to the following four commands:
-  1) concert-this
-  2) spotify-this-song
-  3) movie-this
-  4) do-what-it-says
+  1) concert-this      -- search for an artist or band concert information 
+  2) spotify-this-song -- search for an information about a song on Spotify
+  3) movie-this        -- search for a movie information on OMDb
+  4) do-what-it-says   -- reads search commands from a text file random.txt 
 
 #### Usages and Outputs (requirements)
 
