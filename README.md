@@ -75,6 +75,7 @@ OMDB_KEY=<your API key>
 ### Examples
 
 1. Search concerts for an artist or a band
+
     `node liri.js concert-this <artist/band name>`
 
     * Without `<artist/band name>`, there will be no result.
@@ -84,6 +85,7 @@ OMDB_KEY=<your API key>
       ![concert-this image](images/screenshot-concert-artists.png)
 
 2. Search a song on Spotify
+
     `node liri.js spotify-this-song <song name>`
 
     * Default without a `<song name>` argument, the result will be "The Sign" by "Ace of Base".
@@ -93,15 +95,17 @@ OMDB_KEY=<your API key>
       ![spotify-this-song image](images/screenshot-song-queen.png)
 
 3. Search a movie info on OMDb
+
     `node liri.js movie-this <movie name>`
 
     * Default without a `<movie name>` argument, the result will be for the movie "Mr. Nobody".
-      ![movie-this default image](screenshot-movie-default.png)
+      ![movie-this default image](images/screenshot-movie-default.png)
 
     * With `<movie name>`. Search for "Pulp Fiction" for example.
       ![movie-this image](images/screenshot-movie-pulpfiction.png)
 
 4. Run multiple searches based on a text file, random.txt
+
     `node liri.js do-what-it-says`
 
     * In the following example, The input file "random.txt" contains 4 commands:
