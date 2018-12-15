@@ -109,8 +109,11 @@ class Liri {
       case "do-what-it-says":
         this.doWhatItSays();
         break;
+      case undefined:
+        this.usage();
+        return false;
       default:
-        console.log(`Unable to understand the command "${this.command}"`);
+        console.log(`Unable to understand the command "${this.command}"\n`);
         this.usage();
         return false;
     }
@@ -132,7 +135,7 @@ class Liri {
   //
   spotifyThisSong() {
     const spotify = new SpotifyAPI(KEYS.spotify);
-    let songName = "The Sign";
+    let songName = "The Sign Ace of Base";
 
     if (this.cmdArgs.length > 0) {
       songName = this.cmdArgs.join(" ");
@@ -258,6 +261,10 @@ class BandsInTown {
     }
     if ('errorMessage' in data) {
       console.log(data.errorMessage);
+      return null;
+    }
+    if ('message' in data) {
+      console.log(data.message);
       return null;
     }
 
@@ -475,13 +482,13 @@ class OMDbAPI {
     let rottenTomatoes = "(unavailable)";
 
     if ('Ratings' in data) {
-      data.Ratings.filter(rating =>
+      let rtRating = data.Ratings.filter(rating =>
         rating.Source === 'Rotten Tomatoes'
       );
-      // console.log(rottenTomatoes);
+      // console.log(rtRaiting);
 
-      if (rottenTomatoes.length === 1) {
-        rottenTomatoes = rottenTomatoes.shift().Value;
+      if (rtRating.length === 1) {
+        rottenTomatoes = rtRating.shift().Value;
       }
     }
 
