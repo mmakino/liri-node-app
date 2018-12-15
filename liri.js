@@ -312,6 +312,12 @@ class SpotifyAPI {
     this.api = new Spotify(key);
   }
 
+  //
+  // Search the "song" on Spotify
+  //
+  // PARAMs:
+  // * song = a name of song
+  //
   searchSong(song = "The Sign") {
     let params = {
       type: 'track',
@@ -378,10 +384,9 @@ class OMDbAPI {
   // Find conerts for "artistName"
   //
   // PARAMS:
-  // * artistName = a name of artist or band
-  // * maxEvents = the maximum number of events to list
+  // * movieName = a name of movie
   //
-  findMovie(movieName) {
+  findMovie(movieName = "Mr. Nobody") {
     let query = [
       'http://www.omdbapi.com/?',
       this.key,
@@ -492,3 +497,4 @@ class OMDbAPI {
 const liri = new Liri();
 
 liri.doIt();
+
