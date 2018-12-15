@@ -1,0 +1,26 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "LIRI is a command-line node app to run APIs",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmakino/liri-node-app.git"
+  },
+  "keywords": [],
+  "author": "Motohiko Makino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmakino/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/mmakino/liri-node-app#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "moment": "^2.23.0",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.88.0"
+  }
+}
