@@ -122,7 +122,7 @@ OMDB_KEY=<your API key>
         Reading ./random.txt ...
         [ 'spotify-this-song,"I Want it That Way"',
           'movie-this,Star Wars',
-          concert-this,Maroon 5',
+          'concert-this,Maroon 5',
           'spotify-this-song',
           '' ]
 
